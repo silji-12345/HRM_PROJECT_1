@@ -1,4 +1,3 @@
-import page
 from Pages.BAdmin import Admin
 class Logins:
 
