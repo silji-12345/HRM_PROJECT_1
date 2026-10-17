@@ -1,0 +1,12 @@
+from playwright.sync_api import Page, sync_playwright, expect
+
+
+def test_Admin(page: Page):
+    page.locator("//span[text()='Admin']").click()
+    page.locator("//label[text()='Username']/following::input[1]").fill("Ayush21")
+    page.locator("//button[normalize-space()='Search']").click()
+
+
+
+
+

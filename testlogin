@@ -1,0 +1,15 @@
+import page
+from playwright.sync_api import Page, sync_playwright, expect
+
+class Login:
+
+    def __init__(self,Page):
+        self.page = Page
+        self.username = page.get_by_placeholder("Username").fill("Admin")
+        self.password = page.get_by_placeholder("Password").fill("admin123")
+        self.login_click = page.locator("//button[normalize-space()='Search']").click()
+
+
+
+
+
